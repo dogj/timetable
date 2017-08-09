@@ -7,5 +7,4 @@ public class Hello {
 		System.out.println("haha");
 		///3123123123
 	}
-
 }
