@@ -1,4 +1,4 @@
-package hello;
+package timetable;
 
 import java.sql.DriverManager;
 import java.sql.ResultSet;

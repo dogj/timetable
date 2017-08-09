@@ -1,4 +1,4 @@
-package hello;
+package timetable;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ public class SelectCourse extends Tinterface{
 	
 		try {
 			
-		while (rs.next()) {//数据集不为空
+		while (rs.next()) {//数�?�集�?为空
 			courseList.add((String) rs.getObject(1));		
 			}
 		
