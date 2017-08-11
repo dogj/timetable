@@ -1,4 +1,4 @@
-package hello;
+package TimeTable;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ public class SelectStream {
 				}
 				}
 			}
-			System.out.println(streamList);
+		//	System.out.println(streamList);
 			
 			}
 			catch (Exception e) {  

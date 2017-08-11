@@ -1,4 +1,4 @@
-package hello;
+package TimeTable;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ public class SelectCourse extends Tinterface{
 			courseList.add(rs.getObject(1));		
 			}
 		
-		System.out.println(courseList);
+	//	System.out.println(courseList);
 		
 		}
 		catch (Exception e) {  

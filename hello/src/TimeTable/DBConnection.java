@@ -1,4 +1,4 @@
-package hello;
+package TimeTable;
 
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -43,7 +43,29 @@ public class DBConnection {
         return rs;  
     } 
        
-       //closing 
+       public ResultSet queryExecute(String sql, String s1, String s2)  
+       {  
+           try {  
+               
+               Class.forName(driver);  
+               
+               ct = DriverManager.getConnection(url, user, passwd);  
+                 
+               ps = ct.prepareStatement(sql);  
+               
+               ps.setString(1, s1);
+               ps.setString(2, s2);
+               
+               rs = ps.executeQuery();  //execute
+               
+           } catch (Exception e) {  
+               // TODO: handle exception  
+               e.printStackTrace();  
+         }           
+           return rs;  
+       } 
+       
+
        public void close()  
     {  
         try {  

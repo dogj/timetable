@@ -1,4 +1,4 @@
-package hello;
+package TimeTable;
 
 import java.sql.ResultSet;
 
